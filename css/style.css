@@ -1,0 +1,305 @@
+/* -----------------------CSS RESET---------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------GLOBAL STYLING-------------------- */
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* ----------------HEADINGS & PARAGRAPHS----------------- */
+
+h1 {
+    color: #ffffff;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #7a371e;
+    content: " ";
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.heading-highlight {
+    color: #f58b54;
+}
+
+.heading-icon {
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+}
+
+/* ------------------------LINKS------------------------- */
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------HEADER------------------------ */
+/* ------------------------------------------------------ */
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 90%, rgb(254, 211, 159)), url("cssImages/headerBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-nav {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+    height: 100px;
+}
+
+.logo-container {
+    height: 100px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.logo-image {
+    height: 100%;
+    display: inline-block;
+}
+
+.logo-text {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+.the, .canadian, .waffles {
+    color: #fff;
+}
+
+.canadian{
+    font-size: 1.1rem;
+}
+
+.waffles {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nav-links {
+    float: right;
+    list-style-type: none;
+    height: 100px;
+    padding: 40px 0;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.nav-link a:link,
+.nav-link a:visited {
+    color: #ffffff;
+    padding-bottom: 4px;
+}
+
+.nav-link a:hover,
+.nav-link a:active {
+    border-bottom: 2px solid #a34a28;
+}
+
+.showcase {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.showcase-paragraph {
+    font-size: 1.7rem;
+    margin: 30px 0;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.showcase-btn:link,
+.showcase-btn:visited {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #ffffff;
+    border: 2px solid #a34a28;
+    border-radius: 30px;
+    font-weight: 400;
+}
+
+.showcase-btn:hover,
+.showcase-btn:active {
+    background-color: #7a371e;
+    border: 2px solid #7a371e;
+    font-weight: 300;
+}
+
+/* ------------------------------------------------------ */
+/* --------------------ABOUT SECTION--------------------- */
+/* ------------------------------------------------------ */
+
+.about-section {
+    height: 100vh;
+    text-align: center;
+    padding-top: 90px;
+    background-color: #fed39f;
+}
+
+.about-section h2 {
+    margin: 30px 0;
+    color: #af460f;
+}
+
+.about-paragraph {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+/* ------------------------------------------------------ */
+/* -----------------INGREDIENTS SECTION------------------ */
+/* ------------------------------------------------------ */
+
+.ingredients-section {
+    background-color: #f6eec9;
+    text-align: center;
+}
+
+.ingredients-image-container {
+    width: 49%;
+    display: inline-block;
+    padding: 70px;
+    
+}
+
+.ingredients-image {
+    width: 100%;
+    display: block;
+    box-shadow: 2px 2px 20px 5px #7a371e;
+}
+
+.ingredients-content-container {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+.ingredients-content-container h2 {
+    color: #fe8761;
+}
+
+.ingredients-list {
+    width: 50%;
+    margin: 40px auto;
+    text-align: justify;
+    list-style-position: inside;
+}
+
+.ingredients-list li {
+    margin: 15px;
+}
+
+/* ------------------------------------------------------ */
+/* ---------------------RECIPE SECTION------------------- */
+/* ------------------------------------------------------ */
+
+.recipe-section {
+    /* height: 85vh; */
+    background-color: #fed39f;
+    text-align: center;
+}
+
+.recipe-content-container {
+    width: 49%;
+    display: inline-block;
+    padding-top: 50px;
+    vertical-align: top;
+}
+
+.recipe-content-container h2 {
+    color: #af460f;
+}
+
+.recipe-list {
+    width: 80%;
+    margin: 40px auto;
+    text-align: justify;
+    list-style-position: inside;
+}
+
+.recipe-list li {
+    margin: 30px 0;
+}
+
+.recipe-image-container {
+    width: 49%;
+    display: inline-block;
+    padding: 70px;
+    margin-bottom: 60px;
+}
+
+.recipe-image {
+    width: 100%;
+    display: block;
+    box-shadow: 2px 2px 20px 5px #7a371e;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------FOOTER------------------------ */
+/* ------------------------------------------------------ */
+
+footer {
+    background-color: #584b42;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.made-by-text {
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+    color: #a4d1c8;
+}
+
+.heart-icon {
+    color: #da2d2d;
+}
+
+.maple-leaf-icon {
+    color: #eb8242;
+}
+
+.copyright {
+    font-size: 0.6rem;
+    color: #a4d1c8;
+}
